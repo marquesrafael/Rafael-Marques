@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^rafaelmarques\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.rafaelmarques\.net$
+RewriteRule ^(.*)$ "https\:\/\/www\.rafaelmarques\.net\/$1" [R=301,L]

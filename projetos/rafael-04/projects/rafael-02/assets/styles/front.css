@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #CDD4DE;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+.imagem-total {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nevoa {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+
+.nevoa-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nevoa-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+}
+
+.nevoa-img-first {
+  background: url("../images/nevoa-1.png") repeat-x;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: marquee 60s linear infinite;
+  animation: marquee 60s linear infinite;
+}
+
+.nevoa-img-second {
+  background: url("../images/nevoa-2.png") repeat-x;
+  background-size: contain;
+  background-position: center;
+  -webkit-animation: marquee 40s linear infinite;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-200vw, 0, 0);
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-200vw, 0, 0);
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
+
+#social {
+  position: fixed;
+  width: auto;
+  padding: 0 10px;
+  bottom: 10px;
+  right: 0px;
+  margin: 5px;
+  z-index: 9999999999;
+  text-align: center;
+  text-align: right;
+}
+
+#social a {
+  z-index: 9999999999;
+  display: inline-block;
+  margin: 0px 3px;
+  font-size: 16px;
+}
+
+a {
+  color: #bdc3c7;
+}
+
+a:hover {
+  color: #ecf0f1;
+}
+
+a:active {
+  color: #95a5a6;
+}

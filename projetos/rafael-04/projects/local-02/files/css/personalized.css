@@ -1,0 +1,38 @@
+ .a {
+     fill: none;
+ }
+
+ .b {
+     clip-path: url(#a);
+ }
+
+ .c,
+ .d {
+     fill: #f9f9fc;
+ }
+
+ .d {
+     opacity: 0.5;
+     isolation: isolate;
+ }
+
+ .gray5 {
+     color: #adb5bd;
+ }
+
+ .link-gray {
+     color: #adb5bd;
+ }
+
+ .link-gray:hover {
+     opacity: 0.7;
+     color: #adb5bd;
+ }
+
+ .bg-gray8 {
+     background-color: #343a40;
+ }
+
+ .card-templates {
+     background-color: #2092ed;
+ }
